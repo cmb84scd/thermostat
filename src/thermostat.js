@@ -3,10 +3,18 @@
 class Thermostat {
 
   constructor(){
-    this._temperature = 20;
+    this.temperature = 20;
   };
 
-  temperature(){
-    return this._temperature;
+  getCurrentTemperature(){
+    return this.temperature;
+  }
+
+  up(){
+    this.temperature += 1;
+  }
+
+  down(){
+    this.temperature -= 1;
   }
 };

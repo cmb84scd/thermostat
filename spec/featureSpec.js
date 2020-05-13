@@ -1,11 +1,16 @@
-'use strict'
+// 'use strict'
 
-describe('Feature test', function() {
+// describe('Feature test', function() {
 
-  let thermostat;
+//   let thermostat;
 
-  beforeEach(function() {
-    thermostat = new Thermostat;
-  })
+//   beforeEach(function() {
+//     thermostat = new Thermostat;
+//   })
 
-});
+//   it('can be increased', function(){
+//     thermostat.increase();
+//     expect(thermostat.getCurrentTemperature()).toEqual(20);
+//   });
+
+// });
