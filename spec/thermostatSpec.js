@@ -2,7 +2,7 @@
 
 describe('Thermostat', function(){
 
-  var thermostat; 
+  var thermostat;
 
   beforeEach(function(){
     thermostat = new Thermostat;
@@ -20,6 +20,13 @@ describe('Thermostat', function(){
   it('decreases temperature by 1', function(){
     thermostat.down();
     expect(thermostat.getCurrentTemperature()).toEqual(19);
+  });
+
+  it('has a minimum of 10 degrees', function(){
+    for (var i = 0; i < 11; i++) {
+      thermostat.down();
+    }
+    expect(thermostat.getCurrentTemperature()).toEqual(10);
   });
 
 });
