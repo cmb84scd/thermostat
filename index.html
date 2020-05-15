@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script src="js/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="interface.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>Thermostat</title>
-  </head>
-  <body>
-    <section>
-      <h1 id="temperature"></h1>
-      <p>
-        <button id="temperature-up">+</button>
-        <button id="temperature-down">-</button>
-        <button id="temperature-reset">reset</button>
-        power saving mode is <span id="power-saving-status">on</span>
-        <button id="powersaving-on">PSM on</button>
-        <button id="powersaving-off">PSM off</button>
-      </p>
-    </section>
-    <section>
-      <h2>Current temperature: <span id="current-temp"</span></h2>
-        <select id="current-city">
-          <option value="london">London</option>
-          <option value="tokyo">Tokyo</option>
-          <option value="paris">Paris</option>
-        </select>
-    </section>
-    <script src="src/thermostat.js"></script>
-  </body>
+  <div id="main">
+    <head>
+      <script src="js/jquery-2.1.4.min.js"></script>
+      <script type="text/javascript" src="interface.js"></script>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+      <title>Thermostat</title>
+    </head>
+    <body>
+      <section id="buttons">
+        <h1 id="temperature"></h1>
+        <p>
+          <button id="temperature-up">+</button>
+          <button id="temperature-down">-</button>
+          <button id="temperature-reset">reset</button>
+          power saving mode is <span id="power-saving-status">on</span>
+          <button id="powersaving-on">PSM on</button>
+          <button id="powersaving-off">PSM off</button>
+        </p>
+      </section>
+      <section>
+        <h2>Current temperature: <span id="current-temp"</span></h2>
+          <select id="current-city">
+            <option value="london">London</option>
+            <option value="tokyo">Tokyo</option>
+            <option value="paris">Paris</option>
+          </select>
+      </section>
+      <script src="src/thermostat.js"></script>
+    </body>
+  </div>
 </html>
