@@ -33,4 +33,11 @@ $(document).ready(function() {
     $('#temperature').text(thermostat.temperature);
     $('#temperature').attr('class', thermostat.energyUsage());
   }
+
+  $('#current-city').change(function() {
+    let city = $('#current-city').val();
+    $.get('http://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=73e7d3faa56f40bdd1f10e9f178a47a8&units=metric', function(data){
+      $('#current-temp').text(data.main.temp);
+    })
+  })
 })
